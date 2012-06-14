@@ -11,11 +11,11 @@ beautiful.init(theme)
 
 -- shifty: predefined tags {
 shifty.config.tags = {
-	["dev" ]   = { position = 1, layout = awful.layout.suit.tile.bottom, mwfact = 0.8, spawn = "gvim" },
+	["dev"  ]   = { position = 1, layout = awful.layout.suit.tile.bottom, mwfact = 0.8, spawn = "gvim" },
 	["im"   ]   = { position = 2, layout = awful.layout.suit.tile.left, mwfact = 0.2		           },
 	["web"  ]   = { position = 3, layout = awful.layout.suit.max,                                      },
 	["term" ]   = { position = 4, layout = awful.layout.suit.tile.bottom                               },
-	["mail" ]   = { position = 5, layout = awful.layout.suit.max                                       },
+	["books"]   = { position = 5, layout = awful.layout.suit.max                                       },
 	["music"]   = { position = 6, layout = awful.layout.suit.tile.bottom, max_clientst = 2             },
 	["torrent"] = { position = 7, layout = awful.layout.suit.max                                       },
 }
@@ -29,7 +29,7 @@ shifty.config.apps = {
 	-- Floating windows for browsers
 	{ match = {"Dialog"}, float = true },
 
-	{ match = { "GVim"      }, tag = "dev", master = true                                                },
+	{ match = { "GVim"      }, tag = "dev", master = true                                                 },
 	{ match = { "Glade"     }, float = true                                                               },
 
 	-- IM {
